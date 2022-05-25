@@ -15,6 +15,8 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Alegreya Sans, sans-serif;
+  color: var(--text);
 }
 
 html {
@@ -43,15 +45,21 @@ span {
 .page-header {
   padding: 1.5rem;
   padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   font-size: 1.5rem;
+  font-family: Dawning of a New Day;
+  font-style: italic;
 }
 
 .navlink {
   text-decoration: none;
   margin-right: 0.5rem;
+  color: var(--text);
 }
 
 /* HLAVNÍ NADPIS */
@@ -59,6 +67,8 @@ span {
 .pitch {
   padding: 2.5rem 1.5rem;
   font-size: 2.5rem;
+  font-family: Lora, serif;
+  text-align: center;
 }
 
 /* ÚVODNÍ TEXT  */
@@ -184,7 +194,35 @@ span {
 }
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
+.page-header,
+.pitch,
+.pricelist,
+.footer {
+  background-color: var(--background-secondary);
+}
+.subheading,
+.review {
+  background-color: var(--background-primary);
+}
+.subheading__content {
+  text-align: center;
+}
+.intro-image {
+  height: 70vh;
+  width: 100%;
+  background-image: url(images/arnica-intro.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+.offer {
+  width: 80%;
+  max-width: 270px;
+}
+.review__content {
+  font-style: oblique;
+  border: 2px solid var(--background-secondary);
+}
 @media (min-width: 840px) {
   /* HLAVIČKA - NAVIGACE */
   .page-header {
