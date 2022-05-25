@@ -219,7 +219,7 @@ span {
   width: 80%;
   max-width: 270px;
 }
-.review__content {
+.review__text {
   font-style: oblique;
   border: 2px solid var(--background-secondary);
 }
@@ -257,6 +257,40 @@ span {
     width: 250px;
     padding: 1.5rem;
   }
+  .pricelist__content {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: baseline;
+  }
+  .offer {
+    width: 220px;
+  }
+  .review__text {
+    background-color: var(--background-secondary);
+    width: 250px;
+    position: relative;
+    left: 60px;
+  }
+  .review__photo {
+    width: 300px;
+    height: 400px;
+    background-image: url(images/reviewer.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .footer {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: baseline;
+  }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+}
+@media (min-width: 1200px) {
+  .pricelist__content {
+    gap: 6rem;
+  }
+  .footer {
+    gap: 6rem;
+  }
 }
